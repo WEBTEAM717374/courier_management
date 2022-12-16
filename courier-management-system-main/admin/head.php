@@ -20,7 +20,7 @@
 
         .admintitle{
             position: relative;
-            background-color: brown;
+            background-color: black;
             color: #fff;
             height: 100px;
             line-height: 140px;
@@ -28,6 +28,6 @@
         }
         </style>
     </head>
-	<body bgcolor="#067d64">
+	<body bgcolor="white">
 
     

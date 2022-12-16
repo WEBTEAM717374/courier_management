@@ -35,10 +35,12 @@
     position: relative;
     top: 10px;
     text-align: center;
+    background-color: rgba(15, 210, 236, 0.912);
 }
 body{
     margin:0;
     padding:0;
+    background-color: #2b3a49;
 }
 /* style for navbar */
 .topnav {
@@ -135,4 +137,11 @@ html,body{
 }
 .container .mail-form p{
     font-size: 14px;
+}
+.but{
+  align-items: center;
+}
+th,td,tr{
+
+  padding: 30px;
 }

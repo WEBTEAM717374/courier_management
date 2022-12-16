@@ -17,14 +17,14 @@ if (isset($_SESSION['uid'])) {
     <title>Admin Login</title>
 </head>
 
-<body bgcolor="black">
-    <h5><a href="../index.php" style="float: right; margin-right:50px; color:#00BCD4">Back To Home</a></h5><br>
-    <h1 align='center' style="color: #00BCD4;font-size:60px">Admin Login</h1>
+<body bgcolor="white">
+    <h5><a href="../index.php" style="float: right; margin-right:50px; color:red">Back To Home</a></h5><br>
+    <h1 align='center' style="color: red;font-size:60px">Admin Login</h1>
     
     <form action="adminlogin.php" method="POST" style="margin: auto;">
         <table align="center">
             <tr>
-                <td>Email_ID:</td>
+                <td >Email_ID:</td>
                 <td><input type="email" name="uname" require></td>
             </tr>
             <tr><td><br></td></tr>

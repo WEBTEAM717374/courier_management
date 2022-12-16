@@ -52,11 +52,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 </head>
 
 <body>
-    <h1 align='center' style="margin: 15px; color:seagreen;font-weight: bold;font-family:'Times New Roman', Times, serif">LIGHTNING COURIER SERVICE</h1>
+    <h1 align='center' style="margin: 15px; color:#273c75;font-weight: bold;font-family:'Times New Roman', Times, serif background-color:black;">LIGHTNING COURIER SERVICE</h1>
     <hr />
     <P align='center' style="font-weight: bold;color:orange;font-family:'Times New Roman', Times, serif">Nitte Courier Service </P>
-    <div>
-        <h5><a href="admin/adminlogin.php" style="float: right; margin-right:40px; color:blue; margin-top:0px">Admin Login</a></h5>
+    <div class="but">
+    <button onclick="window.location.href='admin/adminlogin.php'" class="btn btn-dark" style="cursor:pointer">Admin Login</button>
     </div>
     <div class="container" style="margin-top: 60px; width:50%;">
         <div class="row">
@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                         <input type="submit" name="submit" class="btn btn-primary" value="SignIn" />
                         <button onclick="window.location.href='resetpswd.php'" class="btn btn-danger" style="cursor:pointer">Reset Password</button>
                     </div>
-                    <p style="color: #e84118;">Don't have an account?⮞➤ <a href="register.php">Register here</a>.</p>
+                    <p style="color: #e84118;">Don't have an account?⮞➤<button onclick="window.location.href='register.php'" class="btn btn-primary" style="cursor:pointer">register</button></p>
 
                 </form>
             </div>

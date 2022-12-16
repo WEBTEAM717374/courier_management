@@ -33,10 +33,10 @@ $uid = $_SESSION['uid'];
 <body>
     <form action="courierMenu.php" method="POST" enctype="multipart/form-data">
         <div style="overflow-x:auto;">
-            <table border="0px solid" style="margin: auto; font-weight:bold;border-spacing: 5px 15px;">
+            <table border="0px solid" style="margin: auto; font-weight:bold;border-spacing: 10px 20px; ">
                 <th colspan="4" style="text-align: center;background-color:#00FF00; width: 140px; height: 50px;">Fill The Details Of Sender & Receiver</th>
                 <tr>
-                    <td colspan="4" style="text-align: center;">
+                    <td colspan="4" style="text-align: center; padding: 20px;">
                         <hr>
                     </td>
                 </tr>
@@ -54,43 +54,43 @@ $uid = $_SESSION['uid'];
                     <th colspan="2"></th>
                 </tr>
                 <tr>
-                    <td>Name:</td>
+                    <td style="padding: 15px;">Name:</td>
                     <td><input type="text" name="sname" placeholder="Sender FullName" required></td>
 
-                    <td>Name:</td>
+                    <td style="margin:5px ;">Name:</td>
                     <td><input type="text" name="rname" placeholder="Sender FullName" required></td>
                 </tr>
                 <tr>
-                    <td>Email:</td>
+                    <td style="padding: 15px;">Email:</td>
                     <td><input type="text" name="semail" value="<?php echo $email; ?>" readonly></td>
 
                     <td>Email:</td>
                     <td><input type="text" name="remail" placeholder="Receiver EmailId" required></td>
                 </tr>
                 <tr>
-                    <td>PhoneNo.:</td>
+                    <td style="padding: 15px;">PhoneNo.:</td>
                     <td><input type="number" name="sphone" placeholder="sender number" required></td>
 
                     <td>PhoneNo.:</td>
                     <td><input type="number" name="rphone" placeholder="receiver number" required></td>
                 </tr>
                 <tr>
-                    <td>Address:</td>
+                    <td style="padding: 15px;">Address:</td>
                     <td><input type="textfield" name="saddress" placeholder="sender address" required></td>
 
                     <td>Address:</td>
                     <td><input type="textfield" name="raddress" placeholder="receiver address" required></td>
                 </tr>
                 <tr>
-                    <td>Weight:</td>
+                    <td style="padding: 15px;">Weight:</td>
                     <td><input type="number" name="wgt" placeholder="weights in kg" required></td>
 
-                    <td>Payment Id:</td>
+                    <td style="padding: 15px;">Payment Id:</td>
                     <td><input type="number" name="billno" placeholder="enter transition num" required></td>
                 </tr>
                 <tr>
                     <!-- <td>Date:</td><td><input type="date" name="date"></td> -->
-                    <td>Date:</td>
+                    <td style="padding: 15px;">Date:</td>
                     <td><input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" readonly /></td>
                     <td>Items Image:</td>
                     <td><input type="file" name="simg" ></td>

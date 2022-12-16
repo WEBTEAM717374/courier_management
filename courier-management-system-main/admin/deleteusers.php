@@ -13,20 +13,20 @@
 include('head.php');
 ?>
 
-<div class="admintitle">
+<div class="admintitle" style="background-color:black;">
     <div>
     <h5 ><a href="dashboard.php" style="float: left; margin-left:20px; color:aliceblue;">Back To Dashboard</a></h5>
     <h5 ><a href="logout.php" style="float: right; margin-right:20px; color:aliceblue;">LogOut</a></h5>
     </div>
-    <h1 align='center' style="text-shadow: 0.1em 0.1em 0.15em #f9829b;"> Users</h1>
+    <h1 align='center' style="text-shadow: 0.1em 0.1em 0.15em #f9829b; "> Users</h1>
 </div>
 <div style="overflow-x:auto;">
 <table width='80%' border="1px solid" style="margin-left: auto; margin-right:auto; margin-top:30px; font-weight:bold;border-collapse: collapse;">
-    <tr style="background-color: indigo;">
-        <th>No.</th>
-        <th>Users Name</th>
-        <th>Email Id</th>
-        <th>Action</th>
+    <tr style="background-color:#273c75; padding: 20px;">
+        <th style="color: aliceblue; padding-top: 40px;">No.</th>
+        <th style="color: aliceblue;">Users Name</th>
+        <th style="color: aliceblue;">Email Id</th>
+        <th style="color: aliceblue;">Action</th>
     </tr>
     <?php
 
@@ -44,8 +44,8 @@ include('head.php');
             {
                 $count++;
             ?>
-            <tr align="center">
-                <td><?php echo $count; ?></td>
+            <tr align="center" >
+                <td style="padding-top: 20px;"><?php echo $count; ?></td>
                 <td><?php echo $data['name']; ?></td>
                 <td><?php echo $data['email']; ?></td>
                 <td><a href="usersdeleted.php?emm=<?php echo $data['email']; ?>">DeleteUser</a></td>

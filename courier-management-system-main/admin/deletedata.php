@@ -23,8 +23,8 @@ include('head.php');
 
 <div style="overflow-x:auto;">
 <table width='80%' border="1px solid" style="margin-left: auto; margin-right:auto; margin-top:30px; font-weight:bold;border-spacing: 5px 5px;">
-    <tr style="background-color: indigo;">
-        <th>No.</th>
+    <tr style="background-color: #273c75; color: aliceblue;">
+        <th style="padding:40px;">No.</th>
         <th>Items Image</th>
         <th>Sender Name</th>
         <th>Receiver Name</th>
@@ -47,8 +47,8 @@ include('head.php');
         {
             $count++;
         ?>
-        <tr align="center">
-            <td><?php echo $count; ?></td>
+        <tr align="center" >
+            <td ><?php echo $count; ?></td>
             <td><img src="../dbimages/<?php echo $data['image']; ?>" alt="pic" style="max-width: 100px;"/> </td>
             <td><?php echo $data['sname']; ?></td>
             <td><?php echo $data['rname']; ?></td>
